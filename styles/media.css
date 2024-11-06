@@ -1,0 +1,50 @@
+@media (max-width:1366px) {
+  .header__container {
+    padding: 26px 30px 2px;
+  }
+
+  .about__container {
+    padding: 108px 30px 0;
+    gap: 20px;
+  }
+
+  .about__text,
+  .about__text--top {
+    font-size: 28px;
+  }
+
+  .description__text,
+  .color-text {
+    font-size: 28px;
+  }
+
+  .table__item>p {
+    font-size: 16px;
+  }
+
+  .table__item {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .description__container {
+    padding: 45px 30px 165px;
+  }
+
+  .stages__container {
+    padding: 0 30px;
+  }
+
+  .stages__card,
+  .stages__card-item {
+    height: 100%;
+  }
+
+  .stages__card-text {
+    font-size: 16px;
+  }
+
+  .stages__container:before {
+    right: 0;
+    width: 350px;
+  } 
+}

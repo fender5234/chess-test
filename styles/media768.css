@@ -1,0 +1,36 @@
+@media (min-width: 768px) {
+  .splide.is-initialized:not(.is-active) .splide__list {
+    display: grid;
+  }
+}
+
+@media (max-width: 995px) and (min-width: 768px) {
+  .about__text, .about__text--top {
+    font-size: 20px;
+  }
+
+  .description__container> img {
+    max-width: 50%;
+  }
+
+  .color-text {
+    font-size: 22px;
+  }
+
+  .description__text {
+    font-size: 22px;
+  }
+
+  .stages__container::before {
+    content: none;
+  }
+
+  .stage-list-item-6 .stages__card-text {
+    padding-right: 0;
+  }
+
+  .stages__card-item>img {
+    margin-right: 5px;
+  }
+
+}
