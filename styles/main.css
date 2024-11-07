@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-weight: 400;
   font-style: normal;
@@ -100,7 +104,8 @@ ul {
 .header {
   background-image: url(../images/bg-desktop.webp);
   background-repeat: no-repeat;
-  background-position-x: 50%
+  background-position-x: 50%;
+  background-size: cover;
 }
 
 .header__letter {
@@ -271,24 +276,6 @@ ul {
   border-bottom: none
 }
 
-.table__item--2 p {
-  padding-bottom: 14px
-}
-
-.table__item--3 p {
-  height: 27px;
-  padding-top: 14px;
-  padding-bottom: 13px
-}
-
-.table__item--4 p {
-  padding-bottom: 14px
-}
-
-.table__item--5 p {
-  padding-top: 15px
-}
-
 .table__left-text {
   padding: 15px 0;
   font-weight: 400;
@@ -320,7 +307,7 @@ ul {
 .table__span:before {
   content: "";
   position: absolute;
-  top: 13px;
+  top: 10px;
   left: -2px;
   width: 100%;
   height: 3px;
@@ -482,7 +469,6 @@ ul {
 
 .stage-list-item-6 .stages__card-item {
   min-height: 136px;
-  margin-left: 6px
 }
 
 .stage-list-item-6 .stages__card-text {
@@ -522,15 +508,15 @@ ul {
 }
 
 .predents__name {
-  margin: 0 0 5px;
-  padding-left: 17px;
+  text-align: center;
+  margin: 0;
   font-weight: 600;
   font-size: 24px;
   font-family: GolosText-SemiBold, sans-serif
 }
 
 .predents__about {
-  margin: 0 0 21px;
+  margin: 0 0 20px;
   padding-left: 22px;
   font-weight: 400;
   font-size: 20px;
@@ -545,9 +531,11 @@ ul {
 }
 
 .predents__link {
-  display: inline-block;
-  margin-left: 104px;
-  padding: 7px 11px 7px 12px;
+  display: block;
+  margin: 0 auto;
+  max-width: 112px;
+  text-align: center;
+  padding: 8px 12px 8px;
   font-weight: 500;
   font-size: 16px;
   font-family: GolosText-Medium, sans-serif;
@@ -561,44 +549,11 @@ ul {
   background-color: #3057a2
 }
 
-.predents__item {
-  max-width: 320px;
-  margin-left: 37px
-}
-
-.predents__item--2 {
-  margin-left: 44px
-}
-
-.predents__item--3 {
-  margin-left: 51px
-}
-
-.predents__item--4 {
-  margin-left: 38px
-}
-
-.predents__item--5 {
-  margin-left: 44px
-}
-
-.predents__item--6 {
-  margin-left: 51px
-}
-
 .predents__image {
-  margin-bottom: 28px
+  margin: 0 auto 28px;
 }
 
-.predents__item--2 .predents__name,
-.predents__item--3 .predents__name {
-  padding-left: 52px
-}
-
-.predents__item--4 .predents__name,
-.predents__item--5 .predents__name,
-.predents__item--6 .predents__about,
-.predents__item--6 .predents__name {
+.predents__about {
   padding: 0;
   text-align: center
 }
@@ -959,7 +914,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 151px
+  width: 100px
 }
 
 .splide__arrows.slider2-arrows button {
@@ -1025,10 +980,6 @@ ul {
 }
 
 @media (max-width:767px) {
-  .header {
-    background-image: url(../images/bg-mobile.webp);
-    background-size: cover
-  }
 
   .header__container {
     padding: 18px 20px 163px
@@ -1097,63 +1048,14 @@ ul {
 
   .table__left-text {
     padding: 12px 0;
-    border: none
-  }
-
-  .table__right-text {
-    padding: 16px 0 15px;
-    border-left: none
-  }
-
-  .table__item--2 .table__left-text {
-    padding: 15px 0 12px
-  }
-
-  .table__item--2 .table__right-text {
-    padding: 0 0 15px
-  }
-
-  .table__item--3 .table__right-text {
-    padding: 0 0 12px
-  }
-
-  .table__item--3 .table__left-text {
-    padding: 15px 0 9px
-  }
-
-  .table__item--4 .table__right-text {
-    padding: 15px 0 15px 12px;
-    border: none
-  }
-
-  .table__item--4 .table__left-text {
-    padding: 15px 0 0
-  }
-
-  .table__item--5 .table__right-text {
-    padding: 12px 0 0
-  }
-
-  .table__item--5 .table__left-text {
-    padding: 15px 0 0
-  }
-
-  .table__item {
-    order: 1
-  }
-
-  .table__item--2 {
-    order: 2
-  }
-
-  .table__item--3 {
-    order: 4
   }
 
   .table__item--4 {
-    display: flex;
-    order: 3;
     border-bottom: 2px solid #d0d0d0
+  }
+
+  .table__item--4 p {
+    border-bottom: none;
   }
 
   .table__item--5 {
@@ -1244,7 +1146,6 @@ ul {
 
   .stages__card {
     box-sizing: border-box;
-    max-width: 335px;
     min-height: 300px;
     padding-top: 64px;
     background-image: url(../images/paper-bg.webp)
@@ -1256,7 +1157,7 @@ ul {
 
   .stages__card.stages__card--1 .stages__card-item:first-child,
   .stages__card.stages__card--2 .stages__card-item:first-child {
-    margin-bottom: 28px
+    margin-bottom: 10px
   }
 
   .predents__container {
@@ -1284,17 +1185,9 @@ ul {
     text-align: center
   }
 
-  .predents__name {
-    margin: 0 0 8px
-  }
-
   .predents__about,
   .predents__name {
     padding: 0
-  }
-
-  .predents__link {
-    margin: 0
   }
 
   .splide__arrows.slider2-arrows {
@@ -1353,9 +1246,241 @@ ul {
   }
 }
 
-
 @media (max-width:1366px) {
   .header__container {
     padding: 26px 30px 2px;
+  }
+
+  .about__container {
+    padding: 108px 30px 0;
+    gap: 20px;
+  }
+
+  .about__text,
+  .about__text--top {
+    font-size: 28px;
+  }
+
+  .description__text,
+  .color-text {
+    font-size: 28px;
+  }
+
+  .table__item>p {
+    font-size: 16px;
+  }
+
+  .table__item {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .description__container {
+    padding: 45px 30px;
+  }
+
+  .stages__container {
+    padding: 0 30px;
+  }
+
+  .stages__card,
+  .stages__card-item {
+    height: 100%;
+  }
+
+  .stages__card-text {
+    font-size: 16px;
+  }
+
+  .stages__card {
+    gap: 10px;
+  }
+
+  .stage-list {
+    grid-gap: 10px;
+  }
+
+  .stages__container:before {
+    right: 0;
+    width: 300px;
+  }
+
+  .predents__container {
+    padding: 202px 30px 12px;
+  }
+
+  .splide__arrows.slider2-arrows {
+    top: 205px;
+    right: 30px;
+  }
+
+  .footer__container {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .stage-list {
+    display: grid !important;
+  }
+}
+
+@media (max-width: 995px) and (min-width: 768px) {
+
+  .about__text,
+  .about__text--top {
+    font-size: 20px;
+  }
+
+  .description__container>img {
+    max-width: 50%;
+  }
+
+  .color-text {
+    font-size: 22px;
+  }
+
+  .description__text {
+    font-size: 22px;
+  }
+
+  .stages__container::before {
+    content: none;
+    width: 300px;
+  }
+
+  .stage-list-item-6 .stages__card-text {
+    padding-right: 0;
+  }
+
+  .stages__card-item>img {
+    margin-right: 5px;
+  }
+
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .predents__name,.predents__about {
+      font-size: 18px;
+      margin-top: auto;
+  }
+
+  .predents__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: stretch;
+      height: 100%;
+  }
+
+  .predents__title {
+      font-size: 46px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__title-format-text.header__title-format-text--right {
+      text-align: left;
+  }
+
+  .header__title-format-text.header__title-format-text--left {
+      text-align: left;
+      padding: 0;
+  }
+
+  .about__container {
+      flex-direction: column;
+  }
+
+  .ticker-wrapper {
+      margin-top: 0;
+  }
+
+  .header__container {
+      padding: 26px 15px 38px;
+  }
+
+  .about__container {
+      padding: 60px 15px 0;
+  }
+
+  .about__text.about__text--top {
+      margin-bottom: 0;
+  }
+
+  .about__text-wrapper {
+      order: 2;
+  }
+
+  .about__image {
+      order: 1;
+  }
+
+  .description__container {
+      padding: 45px 15px 120px;
+  }
+
+  .about__text,
+  .about__text--top,
+  .color-text {
+      font-size: 24px;
+  }
+
+  .description__text {
+      margin-bottom: 30px;
+  }
+
+  .description__text-wrapper {
+      padding: 0;
+      text-align: center;
+  }
+
+  .header__link,
+  .header__link--dark {
+      display: block;
+      margin: 0 auto;
+  }
+
+  .header__link--dark {
+      margin-bottom: 15px;
+  }
+
+  .about__text-wrapper {
+      text-align: center;
+  }
+
+  .table {
+      margin: 0 auto;
+  }
+
+  .description__text-color {
+      margin-top: 20px;
+  }
+
+  .stages__title {
+      font-size: 32px;
+  }
+
+  .stages__container {
+      padding: 0 15px;
+  }
+
+  .stages__container::before {
+      top: 155px;
+  }
+
+  .stages__title {
+      display: block;
+  }
+
+  .stages__subtitle {
+      margin: 0;
+  }
+      
+  .predents__container {
+      text-align: center;
+      padding: 120px 15px 80px;
+  }
+
+  .predents__name,.predents__about {
+      padding: 0 30px;
   }
 }

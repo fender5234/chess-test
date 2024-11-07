@@ -1,0 +1,17 @@
+@media (max-width: 1024px) and (min-width: 768px) {
+    .predents__name,.predents__about {
+        font-size: 18px;
+        margin-top: auto;
+    }
+
+    .predents__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        height: 100%;
+    }
+
+    .predents__title {
+        font-size: 46px;
+    }
+}

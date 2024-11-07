@@ -1,15 +1,17 @@
 @media (min-width: 768px) {
-  .splide.is-initialized:not(.is-active) .splide__list {
-    display: grid;
+  .stage-list {
+    display: grid !important;
   }
 }
 
 @media (max-width: 995px) and (min-width: 768px) {
-  .about__text, .about__text--top {
+
+  .about__text,
+  .about__text--top {
     font-size: 20px;
   }
 
-  .description__container> img {
+  .description__container>img {
     max-width: 50%;
   }
 
@@ -23,6 +25,7 @@
 
   .stages__container::before {
     content: none;
+    width: 300px;
   }
 
   .stage-list-item-6 .stages__card-text {

@@ -43,8 +43,24 @@
     font-size: 16px;
   }
 
+  .stages__card {
+    gap: 10px;
+  }
+
+  .stage-list {
+    grid-gap: 10px;
+  }
+
   .stages__container:before {
     right: 0;
     width: 350px;
-  } 
+  }
+
+  .predents__container {
+    padding: 202px 30px 12px;
+  }
+}
+
+.splide__arrows.slider2-arrows {
+  right: 30px;
 }
