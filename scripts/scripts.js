@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
         gap: 30,
         perPage: 1,
       },
-      1024: {
+      768: {
         gap: 30,
         perPage: 3,
       },

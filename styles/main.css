@@ -914,7 +914,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100px
+  width: 120px
 }
 
 .splide__arrows.slider2-arrows button {
@@ -1091,7 +1091,7 @@ ul {
   }
 
   .stages__container:before {
-    top: 183px;
+    top: 1px;
     right: 0;
     left: 0;
     width: 320px;
@@ -1464,7 +1464,7 @@ ul {
   }
 
   .stages__container::before {
-      top: 155px;
+      top: 109px;
   }
 
   .stages__title {
@@ -1482,5 +1482,13 @@ ul {
 
   .predents__name,.predents__about {
       padding: 0 30px;
+  }
+
+  .footer__container {
+    padding: 0 15px;
+  }
+ 
+  .footer__text {
+    padding: 40px 0 72px;
   }
 }
